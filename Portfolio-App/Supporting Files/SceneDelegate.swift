@@ -17,11 +17,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
-        let storyboard = UIStoryboard(name: "Registration", bundle: nil)
-
-        let navigationController = storyboard.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController
         
-        window.rootViewController = navigationController
+        if !UserDefaults.haveActiveProfile {
+            let storyboard = UIStoryboard(name: "Registration", bundle: nil)
+
+            let navigationController = storyboard.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController
+            
+            window.rootViewController = navigationController
+        } else {
+            let storyboard = UIStoryboard(name: "Login", bundle: nil)
+
+            let navigationController = storyboard.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController
+            
+            window.rootViewController = navigationController
+        }
         
         self.window = window
         window.makeKeyAndVisible()

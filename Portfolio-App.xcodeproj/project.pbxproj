@@ -17,6 +17,8 @@
 		2077873825840A9900253F5D /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077873725840A9900253F5D /* UIColor+.swift */; };
 		20778741258414B000253F5D /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20778740258414B000253F5D /* UserDefaults+.swift */; };
 		20778744258415FA00253F5D /* LAContext+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20778743258415FA00253F5D /* LAContext+.swift */; };
+		2077874B2584342000253F5D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077874A2584342000253F5D /* LoginViewController.swift */; };
+		2077874E2584345000253F5D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2077874D2584345000253F5D /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		2077873725840A9900253F5D /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		20778740258414B000253F5D /* UserDefaults+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
 		20778743258415FA00253F5D /* LAContext+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LAContext+.swift"; sourceTree = "<group>"; };
+		2077874A2584342000253F5D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2077874D2584345000253F5D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			children = (
 				20778722258409F200253F5D /* Registration.storyboard */,
 				20778727258409F600253F5D /* LaunchScreen.storyboard */,
+				2077874D2584345000253F5D /* Login.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				20778720258409F200253F5D /* RegistrationViewController.swift */,
+				2077874A2584342000253F5D /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -179,6 +185,7 @@
 				20778729258409F600253F5D /* LaunchScreen.storyboard in Resources */,
 				2077873425840A3100253F5D /* Colors.xcassets in Resources */,
 				20778726258409F600253F5D /* Assets.xcassets in Resources */,
+				2077874E2584345000253F5D /* Login.storyboard in Resources */,
 				20778724258409F200253F5D /* Registration.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2077874B2584342000253F5D /* LoginViewController.swift in Sources */,
 				20778721258409F200253F5D /* RegistrationViewController.swift in Sources */,
 				2077873825840A9900253F5D /* UIColor+.swift in Sources */,
 				20778741258414B000253F5D /* UserDefaults+.swift in Sources */,
