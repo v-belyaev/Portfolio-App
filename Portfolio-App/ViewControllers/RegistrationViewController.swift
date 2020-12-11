@@ -9,6 +9,7 @@ import UIKit
 
 class RegistrationViewController: UIViewController {
 
+    // MARK: IB Outlets
     @IBOutlet var infoImageViews: [UIImageView]! {
         didSet {
             infoImageViews.forEach {
