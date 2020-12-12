@@ -16,7 +16,6 @@
 		2077873425840A3100253F5D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2077873325840A3100253F5D /* Colors.xcassets */; };
 		2077873825840A9900253F5D /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077873725840A9900253F5D /* UIColor+.swift */; };
 		20778741258414B000253F5D /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20778740258414B000253F5D /* UserDefaults+.swift */; };
-		20778744258415FA00253F5D /* LAContext+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20778743258415FA00253F5D /* LAContext+.swift */; };
 		2077874B2584342000253F5D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077874A2584342000253F5D /* LoginViewController.swift */; };
 		2077874E2584345000253F5D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2077874D2584345000253F5D /* Login.storyboard */; };
 /* End PBXBuildFile section */
@@ -33,7 +32,6 @@
 		2077873325840A3100253F5D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		2077873725840A9900253F5D /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		20778740258414B000253F5D /* UserDefaults+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
-		20778743258415FA00253F5D /* LAContext+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LAContext+.swift"; sourceTree = "<group>"; };
 		2077874A2584342000253F5D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2077874D2584345000253F5D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,7 +89,6 @@
 			children = (
 				2077873725840A9900253F5D /* UIColor+.swift */,
 				20778740258414B000253F5D /* UserDefaults+.swift */,
-				20778743258415FA00253F5D /* LAContext+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -202,7 +199,6 @@
 				2077873825840A9900253F5D /* UIColor+.swift in Sources */,
 				20778741258414B000253F5D /* UserDefaults+.swift in Sources */,
 				2077871D258409F200253F5D /* AppDelegate.swift in Sources */,
-				20778744258415FA00253F5D /* LAContext+.swift in Sources */,
 				2077871F258409F200253F5D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

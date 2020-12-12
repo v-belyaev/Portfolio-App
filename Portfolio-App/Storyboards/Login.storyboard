@@ -15,10 +15,206 @@
                     <view key="view" contentMode="scaleToFill" id="i5o-y2-kMH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Np-5U-OrR">
+                                <rect key="frame" x="30" y="391" width="315" height="256"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="PpN-2L-Vf3">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="58"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9y-Uk-0xi">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="38"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" name="ActiveGreen"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTappedPinButton:" destination="PkM-co-xAk" eventType="touchUpInside" id="6zP-oJ-h08"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZx-Q5-Z8n">
+                                                <rect key="frame" x="142.5" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="38"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" name="ActiveGreen"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTappedPinButton:" destination="PkM-co-xAk" eventType="touchUpInside" id="mvB-KC-C7z"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dra-H0-Pkb">
+                                                <rect key="frame" x="285" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="38"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" name="ActiveGreen"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTappedPinButton:" destination="PkM-co-xAk" eventType="touchUpInside" id="Kuk-q3-EfE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="Aft-fQ-KTz">
+                                        <rect key="frame" x="0.0" y="66" width="315" height="58"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmH-fF-Nok">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="38"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" name="ActiveGreen"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTappedPinButton:" destination="PkM-co-xAk" eventType="touchUpInside" id="0rk-Gy-EAj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3d-es-pXg">
+                                                <rect key="frame" x="142.5" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="38"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" name="ActiveGreen"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTappedPinButton:" destination="PkM-co-xAk" eventType="touchUpInside" id="d3S-8c-PJ5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZH-KK-9gT">
+                                                <rect key="frame" x="285" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="38"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" name="ActiveGreen"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTappedPinButton:" destination="PkM-co-xAk" eventType="touchUpInside" id="PUa-gN-ciG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="mci-60-BvY">
+                                        <rect key="frame" x="0.0" y="132" width="315" height="58"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBl-n2-shE">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="38"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" name="ActiveGreen"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTappedPinButton:" destination="PkM-co-xAk" eventType="touchUpInside" id="hP1-lA-Phv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nql-35-w21">
+                                                <rect key="frame" x="142.5" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="38"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" name="ActiveGreen"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTappedPinButton:" destination="PkM-co-xAk" eventType="touchUpInside" id="Hfi-J9-G0Q"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ks5-kV-SjA">
+                                                <rect key="frame" x="285" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="38"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" name="ActiveGreen"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTappedPinButton:" destination="PkM-co-xAk" eventType="touchUpInside" id="bl5-iG-jAh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="cR4-5V-jDh">
+                                        <rect key="frame" x="0.0" y="198" width="315" height="58"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="10" contentMode="scaleAspectFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1q-6m-bJC">
+                                                <rect key="frame" x="0.0" y="0.0" width="26.5" height="58"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="tintColor" name="ActiveGreen"/>
+                                                <state key="normal" image="delete.left" catalog="system">
+                                                    <color key="titleColor" name="ActiveGreen"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTappedPinButton:" destination="PkM-co-xAk" eventType="touchUpInside" id="H8D-Nw-FjB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwz-Uw-Ywf">
+                                                <rect key="frame" x="142.5" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="38"/>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" name="ActiveGreen"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTappedPinButton:" destination="PkM-co-xAk" eventType="touchUpInside" id="l0v-yX-dgb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwI-WX-9A1">
+                                                <rect key="frame" x="288.5" y="0.0" width="26.5" height="58"/>
+                                                <color key="tintColor" name="ActiveGreen"/>
+                                                <state key="normal" image="touchid" catalog="system">
+                                                    <color key="titleColor" name="ActiveGreen"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTappedPinButton:" destination="PkM-co-xAk" eventType="touchUpInside" id="x4q-0P-J8g"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="w6b-C4-Pqm">
+                                <rect key="frame" x="103.5" y="212" width="168" height="30"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chd-S7-Rfx">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Z3W-VV-GwO"/>
+                                            <constraint firstAttribute="width" constant="30" id="rSP-b6-3Z5"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsI-cU-apP">
+                                        <rect key="frame" x="46" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="N5a-oP-4FB"/>
+                                            <constraint firstAttribute="width" constant="30" id="xm3-pZ-ECf"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sFP-7n-LQu">
+                                        <rect key="frame" x="92" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="kzv-ya-gUU"/>
+                                            <constraint firstAttribute="width" constant="30" id="twJ-9n-5a2"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4z2-Y4-hTC">
+                                        <rect key="frame" x="138" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="8hi-l3-swb"/>
+                                            <constraint firstAttribute="width" constant="30" id="Hyn-ca-WX4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Nea-If-L4r"/>
                         <color key="backgroundColor" name="MainBG"/>
+                        <constraints>
+                            <constraint firstItem="4Np-5U-OrR" firstAttribute="leading" secondItem="Nea-If-L4r" secondAttribute="leading" constant="30" id="55G-qY-fuN"/>
+                            <constraint firstItem="w6b-C4-Pqm" firstAttribute="centerX" secondItem="i5o-y2-kMH" secondAttribute="centerX" id="Nfl-e3-VHM"/>
+                            <constraint firstItem="Nea-If-L4r" firstAttribute="trailing" secondItem="4Np-5U-OrR" secondAttribute="trailing" constant="30" id="Y13-Lj-Qte"/>
+                            <constraint firstItem="Nea-If-L4r" firstAttribute="bottom" secondItem="4Np-5U-OrR" secondAttribute="bottom" constant="20" id="fLM-Rd-aUV"/>
+                            <constraint firstItem="w6b-C4-Pqm" firstAttribute="top" secondItem="Nea-If-L4r" secondAttribute="top" constant="112" id="ukf-t4-bHd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Вход" id="auA-a4-5WM"/>
+                    <connections>
+                        <outletCollection property="pinViews" destination="chd-S7-Rfx" collectionClass="NSMutableArray" id="7FB-Zi-jXN"/>
+                        <outletCollection property="pinViews" destination="nsI-cU-apP" collectionClass="NSMutableArray" id="hU0-tv-xYA"/>
+                        <outletCollection property="pinViews" destination="sFP-7n-LQu" collectionClass="NSMutableArray" id="pxM-Th-Tbk"/>
+                        <outletCollection property="pinViews" destination="4z2-Y4-hTC" collectionClass="NSMutableArray" id="k4g-Wh-IRJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isg-83-vtL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,6 +247,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="delete.left" catalog="system" width="128" height="104"/>
+        <image name="touchid" catalog="system" width="128" height="122"/>
+        <namedColor name="ActiveGreen">
+            <color red="0.25098039215686274" green="0.87450980392156863" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="MainBG">
             <color red="0.12156862745098039" green="0.1803921568627451" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
