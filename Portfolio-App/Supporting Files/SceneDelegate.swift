@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        if UserDefaults.haveActiveProfile {
+        if !UserDefaults.haveActiveProfile {
             let storyboard = UIStoryboard(name: "Registration", bundle: nil)
 
             let navigationController = storyboard.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController

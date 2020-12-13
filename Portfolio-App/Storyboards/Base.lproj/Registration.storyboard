@@ -27,7 +27,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eqC-ne-SXo">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.33000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="eqC-ne-SXo">
                                 <rect key="frame" x="0.0" y="100" width="375" height="4"/>
                                 <color key="progressTintColor" name="ActiveGreen"/>
                             </progressView>
@@ -43,7 +43,57 @@
                                 <state key="normal" title="Далее" image="arrow.right" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTappedMainButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FGA-1U-dU8"/>
+                                </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IS1-3T-xYi" userLabel="2">
+                                <rect key="frame" x="16" y="281.5" width="343" height="104"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Agw-y9-YA2">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" image="mail.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ULx-gB-4gp">
+                                                <rect key="frame" x="0.0" y="1" width="38" height="45.5"/>
+                                                <color key="backgroundColor" name="DisabledYellow"/>
+                                                <color key="tintColor" name="ActiveYellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="38" id="4Ja-Y2-Jf2"/>
+                                                    <constraint firstAttribute="height" constant="48" id="nI7-RD-2Ju"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Твоя почта" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="QI7-2C-68h">
+                                                <rect key="frame" x="58" y="0.0" width="285" height="48"/>
+                                                <color key="tintColor" name="AdditionalText"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next" smartDashesType="no"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wG3-BU-TgA">
+                                        <rect key="frame" x="0.0" y="56" width="343" height="48"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" image="phone.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tKy-2f-4K6">
+                                                <rect key="frame" x="0.0" y="1.5" width="38" height="45.5"/>
+                                                <color key="backgroundColor" name="DisabledYellow"/>
+                                                <color key="tintColor" name="ActiveYellow"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="EX3-As-B2B"/>
+                                                    <constraint firstAttribute="width" constant="38" id="eT4-ds-egn"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Твой номер телефона" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Ez0-Zl-npK">
+                                                <rect key="frame" x="58" y="0.0" width="285" height="48"/>
+                                                <color key="tintColor" name="AdditionalText"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad" keyboardAppearance="alert" textContentType="tel"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FV4-h7-eBP" userLabel="1">
                                 <rect key="frame" x="16" y="281.5" width="343" height="104"/>
                                 <subviews>
@@ -64,7 +114,7 @@
                                                 <color key="tintColor" name="AdditionalText"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="alert" smartDashesType="no" textContentType="name"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="alert" returnKeyType="next" smartDashesType="no" textContentType="name"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -80,15 +130,36 @@
                                                     <constraint firstAttribute="width" constant="38" id="gLh-8b-zd8"/>
                                                 </constraints>
                                             </imageView>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Твой возраст" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="aB9-XV-9rD">
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Твой возраст" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="aB9-XV-9rD">
                                                 <rect key="frame" x="58" y="0.0" width="285" height="48"/>
                                                 <color key="tintColor" name="AdditionalText"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" keyboardAppearance="alert"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" keyboardAppearance="alert"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qPR-Gq-BmW" userLabel="3">
+                                <rect key="frame" x="16" y="309.5" width="343" height="48"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" image="key.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="asT-p2-Jx8">
+                                        <rect key="frame" x="0.0" y="-1.5" width="38" height="51"/>
+                                        <color key="backgroundColor" name="DisabledYellow"/>
+                                        <color key="tintColor" name="ActiveYellow"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="38" id="H9R-24-UJ4"/>
+                                            <constraint firstAttribute="height" constant="48" id="jL8-dI-CFt"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Твой 4-х символьный пин" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="mf2-bW-89G">
+                                        <rect key="frame" x="58" y="0.0" width="285" height="48"/>
+                                        <color key="tintColor" name="AdditionalText"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" keyboardAppearance="alert" secureTextEntry="YES" smartDashesType="no" textContentType="password"/>
+                                    </textField>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -96,30 +167,65 @@
                         <color key="backgroundColor" name="MainBG"/>
                         <constraints>
                             <constraint firstItem="IAt-Qy-7Gs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="07m-s8-yHg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IS1-3T-xYi" secondAttribute="trailing" constant="16" id="2H9-tA-oeG"/>
                             <constraint firstItem="eqC-ne-SXo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="74s-hB-GDn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nTA-iW-53e" secondAttribute="trailing" constant="16" id="DV4-j2-r3A"/>
                             <constraint firstItem="FV4-h7-eBP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="HaL-C1-gKO"/>
+                            <constraint firstItem="IS1-3T-xYi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="JxI-so-ioZ"/>
                             <constraint firstItem="eqC-ne-SXo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KM4-Ji-Zbe"/>
+                            <constraint firstItem="IS1-3T-xYi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="La4-mT-HBQ"/>
                             <constraint firstItem="nTA-iW-53e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Mit-yb-LPi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FV4-h7-eBP" secondAttribute="trailing" constant="16" id="b1l-4a-d9g"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IAt-Qy-7Gs" secondAttribute="bottom" constant="20" id="eYV-pH-cnI"/>
                             <constraint firstItem="nTA-iW-53e" firstAttribute="top" secondItem="eqC-ne-SXo" secondAttribute="bottom" constant="8" symbolic="YES" id="gaH-Ve-StR"/>
+                            <constraint firstItem="qPR-Gq-BmW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hmp-oV-sce"/>
                             <constraint firstItem="eqC-ne-SXo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="itk-yz-UiF"/>
+                            <constraint firstItem="qPR-Gq-BmW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oe7-5N-H5C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qPR-Gq-BmW" secondAttribute="trailing" constant="16" id="pLK-p4-wdH"/>
+                            <constraint firstItem="IS1-3T-xYi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xYU-Cf-ZNz"/>
+                            <constraint firstItem="qPR-Gq-BmW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="y7s-4B-Bx6"/>
                             <constraint firstItem="FV4-h7-eBP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yPd-8f-HCL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Привет!" largeTitleDisplayMode="always" id="KYQ-7k-k7d"/>
                     <connections>
+                        <outlet property="ageTextField" destination="aB9-XV-9rD" id="WQh-XI-szz"/>
+                        <outlet property="fioTextField" destination="pHK-em-IGX" id="tkY-1m-NY6"/>
+                        <outlet property="firstStackView" destination="FV4-h7-eBP" id="akA-8s-YDc"/>
+                        <outlet property="mailTextField" destination="QI7-2C-68h" id="Um7-QW-eCW"/>
                         <outlet property="mainButton" destination="IAt-Qy-7Gs" id="uqX-rf-zRR"/>
+                        <outlet property="phoneTextField" destination="Ez0-Zl-npK" id="ytp-9p-BF9"/>
+                        <outlet property="pinTextField" destination="mf2-bW-89G" id="h1Z-3r-xfV"/>
+                        <outlet property="progressView" destination="eqC-ne-SXo" id="MAL-UZ-Op0"/>
+                        <outlet property="secondStackView" destination="IS1-3T-xYi" id="SMe-du-5bR"/>
+                        <outlet property="thirdStackView" destination="qPR-Gq-BmW" id="ltn-Jy-Wmd"/>
+                        <outlet property="titleStateLabel" destination="kk0-W3-wr9" id="wgS-mE-br8"/>
                         <outletCollection property="infoImageViews" destination="QEr-yD-Pi5" collectionClass="NSMutableArray" id="ZHk-OJ-Tdk"/>
                         <outletCollection property="infoImageViews" destination="kDZ-pl-flm" collectionClass="NSMutableArray" id="gNu-xB-7lF"/>
                         <outletCollection property="textFields" destination="pHK-em-IGX" collectionClass="NSMutableArray" id="4aE-BA-343"/>
                         <outletCollection property="textFields" destination="aB9-XV-9rD" collectionClass="NSMutableArray" id="18T-ha-e14"/>
+                        <outletCollection property="infoImageViews" destination="ULx-gB-4gp" collectionClass="NSMutableArray" id="7jh-Cn-VPy"/>
+                        <outletCollection property="infoImageViews" destination="tKy-2f-4K6" collectionClass="NSMutableArray" id="Vvh-wk-mBg"/>
+                        <outletCollection property="textFields" destination="QI7-2C-68h" collectionClass="NSMutableArray" id="iyI-Ke-Hzc"/>
+                        <outletCollection property="textFields" destination="Ez0-Zl-npK" collectionClass="NSMutableArray" id="zXk-6x-aeG"/>
+                        <outletCollection property="infoImageViews" destination="asT-p2-Jx8" collectionClass="NSMutableArray" id="Mvc-xb-ds2"/>
+                        <outletCollection property="textFields" destination="mf2-bW-89G" collectionClass="NSMutableArray" id="x5s-Se-PEg"/>
+                        <segue destination="Sx4-In-DkH" kind="show" identifier="goToMainTabBar" id="7wT-yb-jPj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="973.60000000000002" y="75.112443778110944"/>
+        </scene>
+        <!--MainTabBar-->
+        <scene sceneID="TOS-dT-xe5">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MainTapBar" storyboardName="MainTabBar" referencedIdentifier="MainTabBar" id="Sx4-In-DkH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Hfq-uT-8BZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YOP-V1-4wu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1727" y="68"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1uD-eO-tQk">
@@ -149,8 +255,11 @@
     </scenes>
     <resources>
         <image name="arrow.right" catalog="system" width="128" height="98"/>
+        <image name="key.fill" catalog="system" width="83" height="128"/>
+        <image name="mail.fill" catalog="system" width="128" height="93"/>
         <image name="number" catalog="system" width="128" height="124"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
         <namedColor name="ActiveGreen">
             <color red="0.25098039215686274" green="0.87450980392156863" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

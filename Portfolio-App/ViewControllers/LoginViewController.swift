@@ -53,7 +53,7 @@ class LoginViewController: UIViewController {
     
     // MARK: Private Methods
     private func checkPin() -> Bool {
-        if let pinCode = UserDefaults.standard.string(forKey: "pin_code") {
+        if let pinCode = UserDefaults.standard.string(forKey: "savedPin") {
             guard pinString == pinCode else { return false }
             return true
         }
@@ -88,7 +88,7 @@ class LoginViewController: UIViewController {
     private func startCheckingPin() {
         let success = checkPin()
         if success {
-            // TODO: Perform Segue
+            performSegue(withIdentifier: "goToMainTabBarFromLogin", sender: self)
         } else {
             showErrorAlert()
             setInitialUI()
@@ -103,7 +103,7 @@ class LoginViewController: UIViewController {
                 if success {
                     DispatchQueue.main.async {
                         self?.setInitialUI()
-                        // TODO: Perform Segue
+                        self?.performSegue(withIdentifier: "goToMainTabBarFromLogin", sender: self)
                     }
                 } else {
                     DispatchQueue.main.async {

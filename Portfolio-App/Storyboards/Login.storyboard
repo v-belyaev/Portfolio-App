@@ -214,11 +214,22 @@
                         <outletCollection property="pinViews" destination="nsI-cU-apP" collectionClass="NSMutableArray" id="hU0-tv-xYA"/>
                         <outletCollection property="pinViews" destination="sFP-7n-LQu" collectionClass="NSMutableArray" id="pxM-Th-Tbk"/>
                         <outletCollection property="pinViews" destination="4z2-Y4-hTC" collectionClass="NSMutableArray" id="k4g-Wh-IRJ"/>
+                        <segue destination="6rh-Mm-J1s" kind="show" identifier="goToMainTabBarFromLogin" id="xVe-Zc-9yo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isg-83-vtL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="959.20000000000005" y="80.50974512743629"/>
+        </scene>
+        <!--MainTabBar-->
+        <scene sceneID="dBP-DR-9s4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainTabBar" referencedIdentifier="MainTabBar" id="6rh-Mm-J1s" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vu6-hG-tDe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qiv-m0-Ggy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1761" y="97"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VDY-gG-yMO">

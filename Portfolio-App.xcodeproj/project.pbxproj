@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		204C44562586586C00CF4718 /* PDFPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C44552586586C00CF4718 /* PDFPreviewViewController.swift */; };
+		204C445A25865BE200CF4718 /* PDFCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C445925865BE200CF4718 /* PDFCreator.swift */; };
+		204C445E258667D400CF4718 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C445D258667D400CF4718 /* SettingsViewController.swift */; };
 		2077871D258409F200253F5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077871C258409F200253F5D /* AppDelegate.swift */; };
 		2077871F258409F200253F5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077871E258409F200253F5D /* SceneDelegate.swift */; };
 		20778721258409F200253F5D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20778720258409F200253F5D /* RegistrationViewController.swift */; };
@@ -18,9 +21,18 @@
 		20778741258414B000253F5D /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20778740258414B000253F5D /* UserDefaults+.swift */; };
 		2077874B2584342000253F5D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077874A2584342000253F5D /* LoginViewController.swift */; };
 		2077874E2584345000253F5D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2077874D2584345000253F5D /* Login.storyboard */; };
+		207787552584FB3200253F5D /* RegistrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207787542584FB3200253F5D /* RegistrationModel.swift */; };
+		207787592586011D00253F5D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207787582586011D00253F5D /* UserModel.swift */; };
+		2077875C258601B900253F5D /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2077875B258601B900253F5D /* MainTabBar.storyboard */; };
+		2077876025860B8100253F5D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077875F25860B8100253F5D /* MainTabBarController.swift */; };
+		20778765258615B000253F5D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20778764258615B000253F5D /* UIView+.swift */; };
+		2077877D2586468500253F5D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077877C2586468500253F5D /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		204C44552586586C00CF4718 /* PDFPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPreviewViewController.swift; sourceTree = "<group>"; };
+		204C445925865BE200CF4718 /* PDFCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFCreator.swift; sourceTree = "<group>"; };
+		204C445D258667D400CF4718 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		20778719258409F200253F5D /* Portfolio-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Portfolio-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2077871C258409F200253F5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2077871E258409F200253F5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +46,12 @@
 		20778740258414B000253F5D /* UserDefaults+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
 		2077874A2584342000253F5D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2077874D2584345000253F5D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		207787542584FB3200253F5D /* RegistrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModel.swift; sourceTree = "<group>"; };
+		207787582586011D00253F5D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		2077875B258601B900253F5D /* MainTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBar.storyboard; sourceTree = "<group>"; };
+		2077875F25860B8100253F5D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		20778764258615B000253F5D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		2077877C2586468500253F5D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		204C445825865BB100CF4718 /* PDFCreator */ = {
+			isa = PBXGroup;
+			children = (
+				204C445925865BE200CF4718 /* PDFCreator.swift */,
+			);
+			path = PDFCreator;
+			sourceTree = "<group>";
+		};
 		20778710258409F200253F5D = {
 			isa = PBXGroup;
 			children = (
@@ -66,8 +92,10 @@
 		2077871B258409F200253F5D /* Portfolio-App */ = {
 			isa = PBXGroup;
 			children = (
+				204C445825865BB100CF4718 /* PDFCreator */,
 				2077873625840A7900253F5D /* Extensions */,
 				2077873225840A1900253F5D /* Resources */,
+				207787532584FB1200253F5D /* Models */,
 				2077874825841F9500253F5D /* ViewControllers */,
 				2077874625841D4A00253F5D /* Storyboards */,
 				2077873D258411AC00253F5D /* Supporting Files */,
@@ -89,6 +117,7 @@
 			children = (
 				2077873725840A9900253F5D /* UIColor+.swift */,
 				20778740258414B000253F5D /* UserDefaults+.swift */,
+				20778764258615B000253F5D /* UIView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -109,6 +138,7 @@
 				20778722258409F200253F5D /* Registration.storyboard */,
 				20778727258409F600253F5D /* LaunchScreen.storyboard */,
 				2077874D2584345000253F5D /* Login.storyboard */,
+				2077875B258601B900253F5D /* MainTabBar.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -118,8 +148,21 @@
 			children = (
 				20778720258409F200253F5D /* RegistrationViewController.swift */,
 				2077874A2584342000253F5D /* LoginViewController.swift */,
+				2077875F25860B8100253F5D /* MainTabBarController.swift */,
+				2077877C2586468500253F5D /* HomeViewController.swift */,
+				204C44552586586C00CF4718 /* PDFPreviewViewController.swift */,
+				204C445D258667D400CF4718 /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		207787532584FB1200253F5D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				207787542584FB3200253F5D /* RegistrationModel.swift */,
+				207787582586011D00253F5D /* UserModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20778729258409F600253F5D /* LaunchScreen.storyboard in Resources */,
+				2077875C258601B900253F5D /* MainTabBar.storyboard in Resources */,
 				2077873425840A3100253F5D /* Colors.xcassets in Resources */,
 				20778726258409F600253F5D /* Assets.xcassets in Resources */,
 				2077874E2584345000253F5D /* Login.storyboard in Resources */,
@@ -196,9 +240,17 @@
 			files = (
 				2077874B2584342000253F5D /* LoginViewController.swift in Sources */,
 				20778721258409F200253F5D /* RegistrationViewController.swift in Sources */,
+				207787592586011D00253F5D /* UserModel.swift in Sources */,
 				2077873825840A9900253F5D /* UIColor+.swift in Sources */,
+				20778765258615B000253F5D /* UIView+.swift in Sources */,
 				20778741258414B000253F5D /* UserDefaults+.swift in Sources */,
+				2077876025860B8100253F5D /* MainTabBarController.swift in Sources */,
+				2077877D2586468500253F5D /* HomeViewController.swift in Sources */,
+				204C44562586586C00CF4718 /* PDFPreviewViewController.swift in Sources */,
+				204C445E258667D400CF4718 /* SettingsViewController.swift in Sources */,
+				207787552584FB3200253F5D /* RegistrationModel.swift in Sources */,
 				2077871D258409F200253F5D /* AppDelegate.swift in Sources */,
+				204C445A25865BE200CF4718 /* PDFCreator.swift in Sources */,
 				2077871F258409F200253F5D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
